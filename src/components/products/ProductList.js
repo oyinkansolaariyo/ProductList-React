@@ -14,13 +14,6 @@ export default class ProductList extends Component {
 		};
 	}
 
-
-	/*componentDidMount() {
-        this.setState({
-            products:ProductService.getProducts()
-        })
-    }*/
-
 	render() {
 		const  productList = this.state.products.map((product) =>
 			<Product key={product.id} product={product}/>

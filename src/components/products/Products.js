@@ -5,6 +5,8 @@
 
 import React, {Component} from 'react';
 import ProductList from './ProductList';
+import ProductView from './ProductView';
+import{Route} from 'react-router-dom';
 
 export default class Products extends Component {
 	constructor() {
@@ -12,9 +14,10 @@ export default class Products extends Component {
 	}
 
 	render() {
-		return(
+		return (
 			<div className="container-fluid product-container">
-				<ProductList/>
+				<Route exact path="/" component={ProductList}></Route>
+				<Route path="/products/:productId" component={ProductView}></Route>
 			</div>
 		);
 	}

@@ -23,6 +23,18 @@ body {
   font-size: large;
 }
 
+a {
+  color: black !important;
+  text-decoration: none !important;
+}
+
+a:hover
+{
+  color:black !important;
+  text-decoration:none !important;
+  cursor:pointer !important;
+}
+
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
